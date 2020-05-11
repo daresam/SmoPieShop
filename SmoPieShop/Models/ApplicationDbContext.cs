@@ -14,5 +14,6 @@ namespace SmoPieShop.Models
         }
 
         public DbSet<Pie> Pies { get; set; }
+        public DbSet<FeedBack> FeedBacks { get; set; }
     }
 }
