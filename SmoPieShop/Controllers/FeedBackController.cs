@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SmoPieShop.Models;
 
@@ -9,6 +10,7 @@ using SmoPieShop.Models;
 
 namespace SmoPieShop.Controllers
 {
+    [Authorize]
     public class FeedBackController : Controller
     {
         private readonly IFeedBackRepository _feedBackRepo;
